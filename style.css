@@ -1314,7 +1314,7 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #865347;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
@@ -1348,8 +1348,8 @@ a:active {
 .paging-navigation .nav-next a:active,
 .post-navigation .nav-next a:active,
 .comment-navigation .nav-next a:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #555;
+  box-shadow: 0 0 0 3px #222;
   color: #FFF;
 }
 .paging-navigation .nav-previous a-full,
@@ -1980,7 +1980,7 @@ a:active {
 }
 .entry-title {
   margin-top: 0.6666666666666666em;
-  margin-bottom: 0.6666666666666666em;
+  margin-bottom: 10px;
   font-size: 2em;
   line-height: 1.2;
   margin-top: 0;
@@ -1990,6 +1990,7 @@ a:active {
   -ms-hyphens: manual;
   -o-hyphens: manual;
   hyphens: manual;
+  text-shadow: 1px 0px 0px #000;
 }
 @media screen and (max-width: 760px) {
   .entry-title {
@@ -2005,10 +2006,10 @@ a:active {
   }
 }
 .entry-title a {
-  color: #2d2d2d;
+  color: #865347;
 }
 .entry-title a:hover {
-  color: #f2777a;
+  color: #000;
 }
 .entry-meta i {
   margin-right: .4em;
@@ -2070,6 +2071,7 @@ a:active {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .js .blog .entry-summary p:last-child,
 .js .archive .entry-summary p:last-child,
@@ -2582,7 +2584,7 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #f2777a;
+  background: #865347;
   border: 0;
   border-radius: 2px;
   box-shadow: none;
@@ -2601,8 +2603,8 @@ a:active {
 #respond .form-submit input:hover,
 #respond .form-submit input:focus,
 #respond .form-submit input:active {
-  background: #f2777a;
-  box-shadow: 0 0 0 3px #f2777a;
+  background: #555;
+  box-shadow: 0 0 0 3px #222;
   color: #FFF;
 }
 #respond .form-submit input-full {

@@ -6,12 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( get_theme_mod( 'eighties_singular_header_image' ) !== 'featured_image' && has_post_thumbnail() ) : ?>
-		<figure class="entry-image">
-			<?php the_post_thumbnail( 'main-featured' ); ?>
-		</figure><!-- .entry-image -->
-	<?php endif; ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 
 	<header class="entry-header">
 		<?php

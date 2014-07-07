@@ -1,11 +1,11 @@
 .image-wrapper {
-    border: 7px solid #555;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
     margin: 0 auto;
+    border: 7px solid white;
 }
 
 .image-wrapper img {
@@ -19,8 +19,86 @@
     min-height: 800px;
     padding: 80px 50px 0;
     text-align: center;
+    background-color: #eee;
+    z-index: -1000;
+    border: 2px dashed #999 ;
 }
 
 .archive .hentry:hover {
-    background-color: #eee;
+    background-color: white;
+    -moz-box-shadow:    0 0 15px 2px #555;
+    -webkit-box-shadow: 0 0 15px 2px #555;
+    box-shadow:         0 0 15px 2px #555;
+    z-index: 100;
+    position: relative; /*important for box hover shadow effect*/
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -kthtml-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.site-title {
+    text-shadow:  2px 2px 2px #000;
+}
+
+.site-description {
+    text-shadow: 1px 1px 1px #000;
+    text-transform: lowercase;
+}
+
+.hentry:hover {
+    
+    z-index: 100;    
+}
+
+span.blink-code {
+    text-decoration: blink;
+    position:  relative;
+    animation: blink 1s step-end infinite;
+    -webkit-animation: blink 1s step-end infinite; /* Safari and Chrome */
+    
+}
+
+@keyframes blink {
+    67% { opacity: 0 }
+}
+
+@-webkit-keyframes blink /* Safari and Chrome */
+{
+   67% { opacity: 0 }
+}
+
+.singular .site-title{
+    font-size: 3em;
+    display: inline;
+}
+
+.singular .site-description {
+    font-size: 1.5em;
+    display: inline;
+}
+
+.singular .blink-code {
+    visibility: hidden;    
+}
+
+.singular .site-branding {
+    padding: 40px 0;
+}
+
+#colophon.site-footer {
+    background-color:  #444;
+    background-image:url('http://localhost:12093/wp-content/themes/eighties/images/header-default.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.site-info a {
+    color: white;
+}
+
+.site-info a:hover, .site-info a:active {
+    color: #999;
 }
