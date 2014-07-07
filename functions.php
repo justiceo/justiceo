@@ -200,6 +200,8 @@ function eighties_scripts() {
 
 	// Eighties Styles
 	wp_enqueue_style( 'eighties', get_stylesheet_uri() );
+    // Eighties Styles
+	wp_enqueue_style( 'custom', get_template_directory_uri().'/css/custom.css' );
 
 	// Register scripts
 	wp_register_script( 'backstretch', get_template_directory_uri() . '/js/jquery.backstretch.js', array( 'jquery' ), '2.0.4',  true  );
@@ -230,6 +232,8 @@ function eighties_scripts() {
 	if ( eighties_header_image() ) {
 		wp_enqueue_script( 'eighties-header', get_template_directory_uri() . '/js/eighties-header.js', array( 'backstretch' ), '20140407', true );
 	}
+
+    
 }
 add_action( 'wp_enqueue_scripts', 'eighties_scripts' );
 

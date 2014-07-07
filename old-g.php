@@ -16,9 +16,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main home archive" role="main">
 
-     
+      
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
