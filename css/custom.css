@@ -8,9 +8,21 @@
     border: 7px solid white;
 }
 
+.image-wrapper:hover {
+    -moz-box-shadow:    0 0 15px 2px #865347;
+    -webkit-box-shadow: 0 0 15px 2px #865347;
+    box-shadow:         0 0 15px 2px #865347;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -kthtml-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
 .image-wrapper img {
     width: 100%;
     height: 100%;
+    
 }
 
 .archive .hentry {
@@ -20,7 +32,6 @@
     padding: 80px 50px 0;
     text-align: center;
     background-color: #eee;
-    z-index: -1000;
     border: 2px dashed #999 ;
 }
 
@@ -45,11 +56,6 @@
 .site-description {
     text-shadow: 1px 1px 1px #000;
     text-transform: lowercase;
-}
-
-.hentry:hover {
-    
-    z-index: 100;    
 }
 
 span.blink-code {
@@ -102,3 +108,35 @@ span.blink-code {
 .site-info a:hover, .site-info a:active {
     color: #999;
 }
+
+body {
+    min-width: 500px;
+}
+
+/** small monitor to tablet*/
+@media screen and (min-width: 1410px) {
+    
+    .archive .hentry {
+        width: 33.3%;
+    }
+ 
+}
+
+/* do this for all screens greater than 800px*/
+@media screen and (min-width: 850px) and (max-width: 1410px) {
+    
+    .archive .hentry {
+        width: 50%;
+    }
+ 
+}
+
+/* do this for all screens greater than 800px*/
+@media screen and (max-width: 850px) {
+    
+    .archive .hentry {
+        width: 100%;
+    }
+ 
+}
+

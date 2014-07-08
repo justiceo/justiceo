@@ -1,8 +1,8 @@
 /*
 Theme Name: Eighties
-Theme URI: http://eighties.me
-Author: Justin Kopepasah
-Author URI: http://kopepasah.com/
+Theme URI: http://justiceo.com
+Author: Justice Ogbonna
+Author URI: http://justiceogbonna.com
 Description: Hello. I'm a modern, progressively enhanced theme designed to keep your content front and center. My menu and sidebar are built to stay out of the way until a user wants to see them; giving users what they want, when they want it.
 Version: 1.1.0
 License: GNU General Public License v2 or later
@@ -1172,7 +1172,7 @@ a:active {
   content: "\f09a";
 }
 .js .menu-social li a[href*='github.com'] {
-  background: #4183C4;
+  background: #555;
 }
 .js .menu-social li a[href*='github.com']:before {
   content: "\f09b";
@@ -1219,6 +1219,13 @@ a:active {
 .js .menu-social li a[href*='wordpress.org']:before {
   content: "\f19a";
 }
+.js .menu-social li a[href*='justiceo.com'] {
+  background: #865347;
+}
+.js .menu-social li a[href*='justiceo.com']:before {
+  content: "\f0f2";
+}
+
 .js .menu-social li a:hover {
   background: #3a3a3a;
   color: #FFF;
