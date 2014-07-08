@@ -113,6 +113,18 @@ body {
     min-width: 500px;
 }
 
+.page-navigation, .post-navigation {
+    max-width: 100%;
+    background-color:  #515151;
+}
+
+.paging-navigation .nav-links, .post-navigation .nav-links {
+    max-width: 960px;
+    margin: 0px auto;
+    position:  relative;
+    top:  30px;
+}
+
 /** small monitor to tablet*/
 @media screen and (min-width: 1410px) {
     

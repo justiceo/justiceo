@@ -1355,7 +1355,7 @@ a:active {
 .paging-navigation .nav-next a:active,
 .post-navigation .nav-next a:active,
 .comment-navigation .nav-next a:active {
-  background: #555;
+  background: #c77b69;
   box-shadow: 0 0 0 3px #222;
   color: #FFF;
 }
@@ -2610,8 +2610,8 @@ a:active {
 #respond .form-submit input:hover,
 #respond .form-submit input:focus,
 #respond .form-submit input:active {
-  background: #555;
-  box-shadow: 0 0 0 3px #222;
+  background: #c77b69;
+  box-shadow: 0 0 0 3px #444;
   color: #FFF;
 }
 #respond .form-submit input-full {
