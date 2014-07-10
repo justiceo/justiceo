@@ -1296,6 +1296,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   padding: 3em 0;
+  clear:  both;
 }
 .paging-navigation:before,
 .post-navigation:before,

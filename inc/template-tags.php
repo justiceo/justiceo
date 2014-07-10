@@ -19,8 +19,7 @@ function eighties_paging_nav() {
 		return;
 	}
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'eighties' ); ?></h1>
+	<nav class="navigation paging-navigation" role="navigation">		
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>

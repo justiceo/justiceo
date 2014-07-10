@@ -33,7 +33,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php eighties_paging_nav(); ?>
+			
 
 		<?php else : ?>
 
@@ -42,6 +42,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+        <?php eighties_paging_nav(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
