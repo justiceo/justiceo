@@ -1356,7 +1356,7 @@ a:active {
 .post-navigation .nav-next a:active,
 .comment-navigation .nav-next a:active {
   background: #c77b69;
-  box-shadow: 0 0 0 3px #222;
+  box-shadow: 0 0 0 3px #444;
   color: #FFF;
 }
 .paging-navigation .nav-previous a-full,

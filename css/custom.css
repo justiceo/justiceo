@@ -32,7 +32,7 @@
     padding: 80px 50px 0;
     text-align: center;
     background-color: #eee;
-    border: 2px dashed #999 ;
+    border: 2px dashed #866c5f ;
 }
 
 .archive .hentry:hover {
@@ -99,6 +99,7 @@ span.blink-code {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .site-info a {
@@ -123,6 +124,11 @@ body {
     margin: 0px auto;
     position:  relative;
     top:  30px;
+}
+
+.site-toggles .widget-area-toggle, .site-toggles .main-navigation-toggle {
+    box-shadow: 2px 2px 5px 1px #333;
+    color:  #865347;
 }
 
 /** small monitor to tablet*/
