@@ -14,7 +14,7 @@
 			$categories_list = get_the_category_list( __( ', ', 'eighties' ) );
 			if ( $categories_list && eighties_categorized_blog() ) :
 		?>
-			<span class="entry-meta entry-meta-categories"><?php echo $categories_list; ?></span>
+			
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<p class="entry-meta entry-meta-time"><i class="fa fa-clock-o"></i><?php echo eighties_get_time_difference( get_the_date( 'Y-m-d H:i:s' ) ); ?></p>
@@ -28,7 +28,9 @@
 				'after'  => '</div>',
 			) );
 		?>
+        <span class="entry-meta entry-meta-categories"><?php echo $categories_list; ?></span>
 	</div><!-- .entry-content -->
+    
 
 	<?php the_tags( '<footer class="entry-footer"><div class="entry-meta entry-meta-tags">', ' ', '</div></footer><!-- .entry-footer -->' ); ?>
 </article><!-- #post-## -->

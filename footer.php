@@ -16,9 +16,9 @@
 		<?php get_sidebar( 'footer' ); ?>
 
 		<div class="site-info">
-			<a href="http://justiceo.com/" target="_blank">Visit My Portfolio Site</a>
+			<a href="http://justiceo.com/" target="_blank" title="Justiceo.com">Visit My Portfolio Site</a>
 			<span class="sep"> | </span>
-			<a href="#">&copy; JusticeOgbonna.com</a>
+			<a href="http://justiceogbonna.com" title="JusticeOgbonna.com">&copy; JusticeOgbonna.com</a>
         </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

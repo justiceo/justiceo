@@ -58,6 +58,12 @@
     text-transform: lowercase;
 }
 
+.site-title a, .site-description {    
+    font-weight: 800;
+}
+
+
+
 span.blink-code {
     text-decoration: blink;
     position:  relative;
@@ -110,9 +116,6 @@ span.blink-code {
     color: #999;
 }
 
-body {
-    min-width: 500px;
-}
 
 .paging-navigation, .post-navigation {
     max-width: 100%;
@@ -188,6 +191,14 @@ body {
     
     .archive .hentry {
         width: 100%;
+        max-height: initial;
+        max-height: fit-content;
+    }
+
+    .image-wrapper {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
     }
  
 }
