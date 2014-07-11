@@ -1,0 +1,13 @@
+/**** justiceogboonna.com log ******/
+
+* animate the banner area or image
+* debugg the navigation area issues - floating, resizing, color blending, page vs post
+* change the highlight color of the website
+* modify input assets to reasonable sizes and colors
+* change the location of tags to the post bottom
+* change both menu to aside menu - with nice hover effects or opacity - see medium.com
+
+Then start work on Justiceo.com
+
+
+

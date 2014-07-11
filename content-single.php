@@ -6,12 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( get_theme_mod( 'eighties_singular_header_image' ) !== 'featured_image' && has_post_thumbnail() ) : ?>
-		<figure class="entry-image">
-			<?php the_post_thumbnail( 'main-featured' ); ?>
-		</figure><!-- .entry-image -->
-	<?php endif; ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 
 	<header class="entry-header">
 		<?php
@@ -19,7 +14,7 @@
 			$categories_list = get_the_category_list( __( ', ', 'eighties' ) );
 			if ( $categories_list && eighties_categorized_blog() ) :
 		?>
-			<span class="entry-meta entry-meta-categories"><?php echo $categories_list; ?></span>
+			
 		<?php endif; ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<p class="entry-meta entry-meta-time"><i class="fa fa-clock-o"></i><?php echo eighties_get_time_difference( get_the_date( 'Y-m-d H:i:s' ) ); ?></p>
@@ -33,7 +28,9 @@
 				'after'  => '</div>',
 			) );
 		?>
+        <span class="entry-meta entry-meta-categories"><?php echo $categories_list; ?></span>
 	</div><!-- .entry-content -->
+    
 
 	<?php the_tags( '<footer class="entry-footer"><div class="entry-meta entry-meta-tags">', ' ', '</div></footer><!-- .entry-footer -->' ); ?>
 </article><!-- #post-## -->

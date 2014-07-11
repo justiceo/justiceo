@@ -12,7 +12,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimun-scale=1 user-scalable=no">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -37,13 +37,23 @@
 		</nav><!-- #site-navigation -->
 
 		<?php if ( eighties_header_image() || get_theme_mod( 'header_textcolor' ) !== 'blank' ) : ?>
-			<header id="masthead" class="site-header" role="banner">
-				<a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
-				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				</div>
-			</header><!-- #masthead -->
+            <?php if ( is_singular() ) : ?>
+			    <header id="masthead" class="site-header singular" role="banner">
+				    <a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
+				    <div class="site-branding">
+					    <h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><span class="blink-code">_</span></a></h2>
+					    <h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+				    </div>
+			    </header><!-- #masthead -->
+            <?php else: ?>
+                <header id="masthead" class="site-header" role="banner">
+				    <a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
+				    <div class="site-branding">
+					    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><span class="blink-code">_</span></a></h1>
+					    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				    </div>
+			    </header><!-- #masthead -->
+            <?php endif; ?>
 		<?php endif; ?>
 
 		<div id="content" class="site-content">

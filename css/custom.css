@@ -1,0 +1,205 @@
+.image-wrapper {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    border: 7px solid white;
+}
+
+.image-wrapper:hover {
+    -moz-box-shadow:    0 0 15px 2px #865347;
+    -webkit-box-shadow: 0 0 15px 2px #865347;
+    box-shadow:         0 0 15px 2px #865347;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -kthtml-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.archive .hentry {
+    width:  33.3%;
+    float:  left;
+    min-height: 800px;
+    padding: 80px 50px 0;
+    text-align: center;
+    background-color: #eee;
+    border: 2px dashed #866c5f ;
+}
+
+.archive .hentry:hover {
+    background-color: white;
+    -moz-box-shadow:    0 0 15px 2px #555;
+    -webkit-box-shadow: 0 0 15px 2px #555;
+    box-shadow:         0 0 15px 2px #555;
+    z-index: 100;
+    position: relative; /*important for box hover shadow effect*/
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -kthtml-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.site-title {
+    text-shadow:  2px 2px 2px #000;
+}
+
+.site-description {
+    text-shadow: 1px 1px 1px #000;
+    text-transform: lowercase;
+}
+
+.site-title a, .site-description {    
+    font-weight: 800;
+}
+
+
+
+span.blink-code {
+    text-decoration: blink;
+    position:  relative;
+    animation: blink 1s step-end infinite;
+    -webkit-animation: blink 1s step-end infinite; /* Safari and Chrome */
+    
+}
+
+@keyframes blink {
+    67% { opacity: 0 }
+}
+
+@-webkit-keyframes blink /* Safari and Chrome */
+{
+   67% { opacity: 0 }
+}
+
+.singular .site-title{
+    font-size: 3em;
+    display: inline;
+}
+
+.singular .site-description {
+    font-size: 1.5em;
+    display: inline;
+}
+
+.singular .blink-code {
+    visibility: hidden;    
+}
+
+.singular .site-branding {
+    padding: 40px 0;
+}
+
+#colophon.site-footer {
+    background-color:  #444;
+    background-image:url('http://localhost:12093/wp-content/themes/eighties/images/header-default.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+.site-info a {
+    color: white;
+}
+
+.site-info a:hover, .site-info a:active {
+    color: #999;
+}
+
+
+.paging-navigation, .post-navigation {
+    max-width: 100%;
+    background-color:  #515151;
+}
+
+.paging-navigation .nav-links, .post-navigation .nav-links {
+    max-width: 960px;
+    margin: 0px auto;
+    position:  relative;
+}
+
+.site-toggles .widget-area-toggle, .site-toggles .main-navigation-toggle {
+    box-shadow: 2px 2px 5px 1px #333;
+    color:  #865347;
+}
+
+.js .main-navigation {
+    width: 400px;
+    overflow: hidden;
+    padding-left:  40px;
+    padding-right: 40px;
+}
+.js .main-navigation-open #site-navigation {
+    opacity: 0.97;
+}
+.js.disable-scroll {
+    overflow: scroll;
+}
+
+.js .menu-social li a {
+    font-size: 2em;
+}
+.search-field {
+    max-width: 400px;
+    width: 100%;
+}
+
+.js #secondary {
+    width:  450px;
+    left:  initial;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.js .widget-area-open #secondary {
+    opacity: 0.97;
+}
+.js #secondary .widget {
+    margin-bottom: 4em;
+}
+
+
+/** small monitor to tablet*/
+@media screen and (min-width: 1410px) {
+    
+    .archive .hentry {
+        width: 33.3%;
+    }
+ 
+}
+
+/* do this for all screens greater than 800px*/
+@media screen and (min-width: 850px) and (max-width: 1410px) {
+    
+    .archive .hentry {
+        width: 50%;
+    }
+ 
+}
+
+/* do this for all screens greater than 800px*/
+@media screen and (max-width: 850px) {
+    
+    .archive .hentry {
+        width: 100%;
+        max-height: initial;
+        max-height: fit-content;
+    }
+
+    .image-wrapper {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+ 
+}
+

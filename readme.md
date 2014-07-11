@@ -1,58 +1,19 @@
-# Hello, my name is Eighties
+# Theme: Brown-Justice
 
-![Eighties Screenshot](screenshot.png)
+![Brown-Justice Screenshot](screenshot.png)
 
-I am a modern, progressively enhanced theme designed to keep your content front and center. My menu and sidebar are built to stay out of the way until a user wants to see them. When clicked, users get a nice clean overlay.
+Brown-Justice is the current theme of Justiceogbonna.com and Justiceo.com for the 2014-2015 coding year. The theme is clean, clear, and characteristic of Justice's design principle's. Since it was specifically for a blog, I put effort at enhancing the readability and present of __content__. 
 
-As a simple, modern and progressively enhanced WordPress theme, I take your content and make it pop. For far to long we have distracted our readers with, advertisements, popups and other junk. Let’s get back to basics and give the readers what they came for: __content__.
+You can see this theme at work at [Justiceogbonna.com](http://justiceogbonna.com). 
 
-You can learn more about me on [the site that my maker built](http://eighties.me). I assure you that both you and your site's visitors will love me; also, you can expect updates and future enhancements for years to come (because my maker loves me, too).
+## Usage
 
-## Installation
+This is a wordpress theme. It is not yet available for download through the WordPress site. But you could get it from here:
 
-Well, this depends on you, as there a many ways to get a theme working on your WordPress site.
+1. Click the __Download Zip__ button at the top right corner
+2. Upload the zip file to your wordpress site themes directory [ something like example.com -> wp-content -> themes ]
+3. Unzip the theme [ or run: unzip Brown-Justice.zip ]
+4. Login to your site admin panel
+5. Go to Appearance > Themes > and active your awesome Brown-Justice theme.
+6. You're done
 
-### WordPress.org (Recommended)
-
-If you have a self hosted WordPress site, then I would recommend downloading me from the WordPress.org repo on your site's theme admin page. You can do that like so.
-
-1. In your admin panel, go to Appearance > Themes and click the __Add New__ button.
-2. Search for Eighties, once your find the theme click __Install__
-3. Click __Activate__ to use your new theme right away.
-4. There is no step four.
-
-### WordPress.com
-
-__NOTE__: Currently waiting on approval from WordPress.com. Sorry, there is nothing you can do to help this. Perhaps you should [send them a tweet](https://twitter.com/wordpressdotcom).
-
-<hr>
-
-If your site is on WordPress.com, then I honestly don't know why you would be viewing this project on Github (unless you want to contribute). You should go to your site and shout out my name! Oh, and by 'shout out', I mean 'search for'.
-
-Or you could follow these steps.
-
-1. In your admin panel, go to Appearance > Themes and click the __Add New__ button.
-2. Search for Eighties, once your find the theme click __Install__
-3. Click __Activate__ to use your new theme right away.
-4. There is no step four.
-
-### Direct Upload
-
-Ohhh, you must be a real go-getter. You can download the latest release from Github, then follow these steps and I'll be active in no time.
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click __Install Now__.
-3. Click Activate to use your new theme right away.
-4. There is no step four.
-
-## FAQs
-
-You can view the [full FAQ here](http://eighties.me/faq/).
-
-## License
-
-If I could get a tattoo, it would say [GPL](http://www.gnu.org/licenses/gpl-2.0.html).
-
-## Contribute
-
-Hey, nobody's perfect. If you see something wrong with me, or simply want to make me better, do not hesitate to submit an issue or pull request.

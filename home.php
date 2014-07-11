@@ -16,9 +16,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-     
+		<main id="main" class="site-main home archive" role="main">
+      
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -34,7 +33,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php eighties_paging_nav(); ?>
+			
 
 		<?php else : ?>
 
@@ -43,6 +42,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+        <?php eighties_paging_nav(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
