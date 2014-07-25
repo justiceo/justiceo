@@ -88,7 +88,7 @@ span.blink-code {
 
 .singular .site-description {
     font-size: 1.5em;
-    display: inline;
+    display: none;
 }
 
 .singular .blink-code {
@@ -167,6 +167,13 @@ span.blink-code {
 }
 .js #secondary .widget {
     margin-bottom: 4em;
+}
+
+.site-content {
+    -webkit-box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    position:relative;
 }
 
 
@@ -259,6 +266,14 @@ span.blink-code {
     
     .js .hentry {
         padding: 2em;
+    }
+
+    .site-title{
+        font-size: 3em;
+        line-height: 1em;
+    }
+    .site-description {
+        margin-top: 1em;
     }
  
 }
