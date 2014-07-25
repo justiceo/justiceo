@@ -2948,7 +2948,7 @@ object {
   line-height: 1;
   color: #474747;
   padding: 5px 10px;
-  background: #FFF;
+  background: #FFF !important;
   border-radius: 2px;
   -webkit-transition: color 100ms linear;
   -moz-transition: color 100ms linear;
@@ -2986,7 +2986,11 @@ object {
 }
 @media screen and (max-width: 1000px) {
   .site-toggles {
-    background: #2d2d2d;
+    background: transparent;
+    position: fixed;
+    top:  0;
+    width: 100%;
+    z-index: 200;
   }
   .site-toggles:before,
   .site-toggles:after {

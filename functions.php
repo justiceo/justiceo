@@ -248,6 +248,19 @@ function eighties_admin_fonts() {
 }
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'eighties_admin_fonts' );
 
+/* use character based excerpt length */
+function get_excerpt(){
+    $excerpt = get_the_content();
+    $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, 200);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    $excerpt = $excerpt.'...';
+    return $excerpt;
+}
+
 /**
  * Implement the Custom Header feature.
  */
