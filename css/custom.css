@@ -28,11 +28,11 @@
 .archive .hentry {
     width:  33.3%;
     float:  left;
-    min-height: 800px;
+    min-height: 700px;
     padding: 80px 50px 0;
     text-align: center;
     background-color: #eee;
-    border: 2px dashed #866c5f ;
+    border: 1px solid #aaa;
 }
 
 .archive .hentry:hover {
@@ -88,7 +88,7 @@ span.blink-code {
 
 .singular .site-description {
     font-size: 1.5em;
-    display: inline;
+    display: none;
 }
 
 .singular .blink-code {
@@ -134,7 +134,8 @@ span.blink-code {
 }
 
 .js .main-navigation {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
     padding-left:  40px;
     padding-right: 40px;
@@ -155,7 +156,8 @@ span.blink-code {
 }
 
 .js #secondary {
-    width:  450px;
+    width:  100%;
+    max-width: 400px;
     left:  initial;
     padding-left: 30px;
     padding-right: 30px;
@@ -165,6 +167,13 @@ span.blink-code {
 }
 .js #secondary .widget {
     margin-bottom: 4em;
+}
+
+.site-content {
+    -webkit-box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
+    position:relative;
 }
 
 
@@ -177,28 +186,94 @@ span.blink-code {
  
 }
 
-/* do this for all screens greater than 800px*/
+/* do this for all screens greater than 850px and less than 1410px - flipped tablet and mobile screens*/
 @media screen and (min-width: 850px) and (max-width: 1410px) {
     
     .archive .hentry {
         width: 50%;
     }
+
+    body {
+        font-size: 0.9em;
+        line-height: 1.5em;    
+    }
+    
+    .archive .hentry {
+        width: 50%;
+        padding: 60px 20px;
+        min-height: 650px;
+    }
+
+    .entry-title {
+        font-size: 1.9em;
+    }
  
 }
 
-/* do this for all screens greater than 800px*/
-@media screen and (max-width: 850px) {
+/* do this for all screens greater than 650px and less than 800px - tablet screens*/
+@media screen and (min-width: 650px) and (max-width: 850px) {
+    
+    .archive .hentry {
+        width: 50%;
+    }
+
+    body {
+        font-size: 0.8em;
+        line-height: 1.5em;    
+    }
+    
+    .archive .hentry {
+        width: 50%;
+        padding: 50px 20px;
+        min-height: 500px;
+    }    
+
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .entry-title {
+        font-size: 1.8em;
+    }
+ 
+}
+
+/* do this for all screens less than 650px - mobile screen*/
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 0.9em;
+        line-height: 1.5em;    
+    }
     
     .archive .hentry {
         width: 100%;
-        max-height: initial;
-        max-height: fit-content;
+        padding: 40px 10px;
+        min-height: 400px;
     }
 
     .image-wrapper {
-        width: 70%;
-        height: auto;
+        width: 200px;
+        height: 200px;;
         margin: 0 auto;
+    }
+
+    .entry-title {
+        font-size: 1.8em;
+        margin: 0px 5px 10px;
+    }
+    
+    .js .hentry {
+        padding: 2em;
+    }
+
+    .site-title{
+        font-size: 3em;
+        line-height: 1em;
+    }
+    .site-description {
+        margin-top: 1em;
     }
  
 }

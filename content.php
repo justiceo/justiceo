@@ -29,7 +29,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php echo get_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
@@ -74,7 +74,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php echo get_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 

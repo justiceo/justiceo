@@ -1,30 +1,19 @@
 /*
-Theme Name: Eighties
+Theme Name: Brown-Justice
 Theme URI: http://justiceo.com
 Author: Justice Ogbonna
 Author URI: http://justiceogbonna.com
-Description: Hello. I'm a modern, progressively enhanced theme designed to keep your content front and center. My menu and sidebar are built to stay out of the way until a user wants to see them; giving users what they want, when they want it.
+Description: Brown-Justice is the current theme of Justiceogbonna.com and Justiceo.com for the 2014-2015 coding year. The theme is clean, clear, and characteristic of Justice's design principle's.
 Version: 1.1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: eighties
-Domain Path: /languages/
-Tags: light, red, white, one-column, responsive-layout, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-Eighties is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+    
+Brown-Justice is based on Eighties http://eighties.me/ by Kopepasah.
 
 Resource Licenses:
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Backstretch: MIT
 FitVids: WTFPL license - http://sam.zoy.org/wtfpl/
 
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
-*/
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -50,9 +39,8 @@ and Blueprint http://www.blueprintcss.org/
 15.0 - Footer
 16.0 - Jetpack
 --------------------------------------------------------------*/
-/*
-	TODO Should this be renamed?
-*/
+
+
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/
@@ -2960,7 +2948,7 @@ object {
   line-height: 1;
   color: #474747;
   padding: 5px 10px;
-  background: #FFF;
+  background: #FFF !important;
   border-radius: 2px;
   -webkit-transition: color 100ms linear;
   -moz-transition: color 100ms linear;
@@ -2998,7 +2986,11 @@ object {
 }
 @media screen and (max-width: 1000px) {
   .site-toggles {
-    background: #2d2d2d;
+    background: transparent;
+    position: fixed;
+    top:  0;
+    width: 100%;
+    z-index: 200;
   }
   .site-toggles:before,
   .site-toggles:after {
@@ -3017,7 +3009,7 @@ object {
   }
   .site-toggles .main-navigation-toggle:hover,
   .site-toggles .widget-area-toggle:hover {
-    color: #FFF;
+    color: #333;
   }
   .site-toggles .main-navigation-toggle {
     float: left;
