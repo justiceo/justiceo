@@ -3009,7 +3009,7 @@ object {
   }
   .site-toggles .main-navigation-toggle:hover,
   .site-toggles .widget-area-toggle:hover {
-    color: #FFF;
+    color: #333;
   }
   .site-toggles .main-navigation-toggle {
     float: left;
