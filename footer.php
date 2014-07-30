@@ -12,7 +12,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/header-default.jpg">
 		<?php get_sidebar( 'footer' ); ?>
 
 		<div class="site-info">

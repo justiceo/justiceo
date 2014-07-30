@@ -100,8 +100,7 @@ span.blink-code {
 }
 
 #colophon.site-footer {
-    background-color:  #444;
-    background-image:url('http://justiceo.com/images/footer-image.jpg');
+    background-color:  brown;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;

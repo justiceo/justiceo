@@ -1214,6 +1214,13 @@ a:active {
   content: "\f0f2";
 }
 
+.js .menu-social li a[href*='justiceogbonna.com'] {
+  background: #865347;
+}
+.js .menu-social li a[href*='justiceogbonna.com']:before {
+  content: "\f10d";
+}
+
 .js .menu-social li a:hover {
   background: #3a3a3a;
   color: #FFF;
