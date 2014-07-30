@@ -18,6 +18,18 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
+    <?php if( is_home() ): ?>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/jquery_002.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+                $('.subMenu').smint({
+    	            'scrollSpeed' : 1000
+                });
+            });
+        </script>
+    <?php endif; ?>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -46,8 +58,10 @@
 					    <h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
 				    </div>
 			    </header><!-- #masthead -->
+            <?php elseif ( is_home() ) : ?>
+			   <!-- empty #masthead -->
             <?php else: ?>
-                <header id="masthead" class="site-header" role="banner">
+                <header id="masthead" class="site-header singular" role="banner">
 				    <a class="skip-link screen-reader-text" href="#content" <?php echo ( eighties_header_image() ) ? 'data-backstretch="' . eighties_header_image() . '"' : ''; ?>><?php _e( 'Skip to content', 'eighties' ); ?></a>
 				    <div class="site-branding">
 					    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?><span class="blink-code">_</span></a></h1>

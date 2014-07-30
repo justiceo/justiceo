@@ -101,7 +101,7 @@ span.blink-code {
 
 #colophon.site-footer {
     background-color:  #444;
-    background-image:url('http://localhost:12093/wp-content/themes/eighties/images/header-default.jpg');
+    background-image:url('http://justiceo.com/images/footer-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -175,6 +175,17 @@ span.blink-code {
     box-shadow: 3px -12px 70px 6px rgba(0,0,0,0.75);
     position:relative;
 }
+
+/**** make banner masthead a color */
+.backstretch img {
+    display: none!important;
+    background: brown;
+}
+
+header#masthead {
+    background: brown!important;
+}
+
 
 
 /** small monitor to tablet*/
