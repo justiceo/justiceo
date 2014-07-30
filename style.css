@@ -1317,8 +1317,8 @@ a:active {
   cursor: pointer;
   display: inline-block;
   padding: 1em;
-  background: #865347;
-  border: 0;
+  background: #177F75;
+  border: 2px solid #eee;
   border-radius: 2px;
   box-shadow: none;
   color: #FFF;
@@ -1332,6 +1332,7 @@ a:active {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition:  all linear 0.2s;
 }
 .paging-navigation .nav-previous a:hover,
 .post-navigation .nav-previous a:hover,
@@ -1351,8 +1352,7 @@ a:active {
 .paging-navigation .nav-next a:active,
 .post-navigation .nav-next a:active,
 .comment-navigation .nav-next a:active {
-  background: #c77b69;
-  box-shadow: 0 0 0 3px #444;
+  background: #d03535;
   color: #FFF;
 }
 .paging-navigation .nav-previous a-full,
@@ -2115,7 +2115,7 @@ a:active {
 .js .page-header {
   padding-top: 3em;
   padding-bottom: 3em;
-  background: #515151;
+  background: #177F75;
   color: #FFF;
   text-align: center;
 }
@@ -2602,12 +2602,12 @@ a:active {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition: all linear 0.2s;
 }
 #respond .form-submit input:hover,
 #respond .form-submit input:focus,
 #respond .form-submit input:active {
   background: #c77b69;
-  box-shadow: 0 0 0 3px #444;
   color: #FFF;
 }
 #respond .form-submit input-full {
