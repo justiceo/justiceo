@@ -996,7 +996,14 @@ a:active {
   -moz-transition: opacity 200ms linear, bottom 0s linear;
   -o-transition: opacity 200ms linear, bottom 0s linear;
   transition: opacity 200ms linear, bottom 0s linear;
+  border-right:  1px solid #aaa;  
+  box-shadow: 0px 0px 15px 2px #222; 
 }
+
+.js .main-navigation-open #site-navigation:hover {
+  transition: all linear 0.3s;
+}
+
 .js .main-navigation-open #page {
   position: absolute;
   left: 0;
@@ -1034,6 +1041,7 @@ a:active {
   color: #FFF;
   line-height: 1;
   text-transform: uppercase;
+  visibility: hidden;
 }
 .js .main-navigation li {
   display: block;
@@ -1838,7 +1846,14 @@ a:active {
   -moz-transition: opacity 300ms ease-in, bottom 300ms linear;
   -o-transition: opacity 300ms ease-in, bottom 300ms linear;
   transition: opacity 300ms ease-in, bottom 300ms ease-in;
+  box-shadow: 0px 0px 15px 2px #222;
+  border-left:  1px solid #aaa;
 }
+.js .widget-area-open #secondary:hover {
+  box-shadow: 0px 0px 15px 2px #222;
+  transition: all linear 0.3s;
+}
+
 .js .widget-area-open #page {
   position: absolute;
   right: 0;
@@ -2920,12 +2935,19 @@ object {
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
+  white-space: nowrap;
+  word-break: break-all;
 }
 .site-title {
   font-size: 160px;
   font-size: 8.88888888888889rem;
   line-height: 1.1;
 }
+.site-title:hover{
+    text-shadow: 3px 3px 15px #000;  
+    transition: all linear 0.2s;
+}
+
 .site-title a {
   color: white;
 }

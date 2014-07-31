@@ -139,9 +139,7 @@ span.blink-code {
     padding-left:  40px;
     padding-right: 40px;
 }
-.js .main-navigation-open #site-navigation {
-    opacity: 0.97;
-}
+
 .js.disable-scroll {
     overflow: scroll;
 }
@@ -161,9 +159,7 @@ span.blink-code {
     padding-left: 30px;
     padding-right: 30px;
 }
-.js .widget-area-open #secondary {
-    opacity: 0.97;
-}
+
 .js #secondary .widget {
     margin-bottom: 4em;
 }
